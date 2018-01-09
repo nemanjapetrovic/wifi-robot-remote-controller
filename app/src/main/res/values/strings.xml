@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WifiRobotRemoteController</string>
+    <string name="title_activity_main">\u00AEBot Remote</string>
+    <string name="settings_ip">IP:</string>
+    <string name="settings_port">PORT:</string>
+    <string name="settings_hint_ip1">192</string>
+    <string name="ip_dot">.</string>
+    <string name="settings_hint_ip2">168</string>
+    <string name="settings_hint_ip3">100</string>
+    <string name="settings_hint_ip4">1</string>
+    <string name="save">   SAVE   </string>
+    <string name="ip">0.0.0.0</string>
+    <string name="port">8000</string>
+    <string name="port_hint">8000</string>
+</resources>

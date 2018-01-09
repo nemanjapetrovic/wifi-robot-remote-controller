@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rs.ac.ni.elfak.robot.wifiremotecontroller.MainActivity">
+
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/UIRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:alpha="0.5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutSlider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/batteryLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/BLUE"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/odometryTextL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/batteryLevel"
+                    android:textColor="@color/BLUE"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/odometryTextR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/odometryTextL"
+                    android:textColor="@color/BLUE"
+                    android:textSize="26sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageButton
+                    android:id="@+id/BtnLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/left"
+                    android:contentDescription="@null" />
+
+                <ImageButton
+                    android:id="@+id/BtnRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/BtnLeft"
+                    android:background="@drawable/right"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:alpha="0.5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/BtnFoward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/foward"
+                        android:contentDescription="@null" />
+
+                    <ImageButton
+                        android:id="@+id/BtnBackward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/backward"
+                        android:contentDescription="@null" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/OnOffButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/linearLayout"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.5"
+            android:background="@drawable/off"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="180"
+            android:progress="0"
+            android:progressDrawable="@drawable/seekbar_progressbar"
+            android:scrollbarAlwaysDrawHorizontalTrack="true" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/RecOnOffButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rec_off"
+            android:contentDescription="@null" />
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RecOnOffButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/settings"
+            android:contentDescription="@null" />
+
+        />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="rs.ac.ni.elfak.robot.wifiremotecontroller.SettingsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        app:layout="@layout/settings_fragment"
+        tools:ignore="MissingPrefix"
+        tools:layout="@layout/settings_fragment" />
+
+</RelativeLayout>
