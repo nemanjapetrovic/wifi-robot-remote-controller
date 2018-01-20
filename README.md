@@ -1,4 +1,10 @@
-# README
+# Team members
+
+- [Nikola Vitanović](https://github.com/NVitanovic)
+- [Mihajlo Nikolić](https://www.linkedin.com/in/mihajlonikolic94/)
+- [Risto Keković](https://github.com/Risto995)
+
+# Details
 
 IDE: Android Studio
 
